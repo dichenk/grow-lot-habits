@@ -17,6 +17,9 @@ class HabitCreateSerializer(serializers.ModelSerializer):
             'action',
             'reward',
             'time_for_finishing',
+            'periodic_habit',
+            'pleasure_habit',
+            'binded_habit'
         )
         validators = [HabitValidator(field='model')]
 

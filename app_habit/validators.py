@@ -11,8 +11,11 @@ class HabitValidator:
         binded_habit = value.get('binded_habit')
         reward = value.get('reward')
         time_for_finishing = value.get('time_for_finishing')
+        #
+        # if periodic_habit is None or time_for_finishing is None :
+        #     raise serializers.ValidationError('Обхекты не могут быть None')
 
-        if binded_habit != '' and reward != '':
+        if binded_habit is not None and reward != '':
             raise serializers.ValidationError(
                 'исключается одновременный выбор связанной привычки и указания вознаграждения')
         if periodic_habit > 7:
@@ -23,8 +26,8 @@ class HabitValidator:
         if binded_habit == '' and reward == '':
             raise serializers.ValidationError(
                 'нельзя, чтобы связанная привычка и вознаграждение были одновременно пустые')
-        if binded_habit != '' and pleasure_habit != True:
+        if binded_habit is not None and pleasure_habit is True:
             raise serializers.ValidationError(
                 'в связанные привычки могут попадать только привычки с признаком приятной привычки')
-        if pleasure_habit == True and (reward != '' or binded_habit != ''):
+        if pleasure_habit is True and (reward is not None or binded_habit is not None):
             raise serializers.ValidationError('у приятной привычки не может быть вознаграждения или связанной привычки')
