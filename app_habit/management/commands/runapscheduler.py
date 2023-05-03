@@ -9,14 +9,14 @@ from django_apscheduler.jobstores import DjangoJobStore
 from django_apscheduler.models import DjangoJobExecution
 from django_apscheduler import util
 
-from app_habit.remember import read_db, read_tg
+from app_habit.remember import read_tg, make_notification
 
 logger = logging.getLogger(__name__)
 
 
 def my_job():
-    read_db()
     read_tg()
+    make_notification()
 
 # The `close_old_connections` decorator ensures that database connections, that have become
 # unusable or are obsolete, are closed before and after your job has run. You should use it
