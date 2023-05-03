@@ -9,58 +9,14 @@ from django_apscheduler.jobstores import DjangoJobStore
 from django_apscheduler.models import DjangoJobExecution
 from django_apscheduler import util
 
+from app_habit.remember import read_db, read_tg
 
 logger = logging.getLogger(__name__)
 
 
-def read_json(variable):  # json.loads не хочет читать одинарные кавычки и True. Поправим.
-    variable = variable.replace("'", "\"")
-    variable = variable.replace("True", "\"True\"")
-    variable = variable.replace("False", "\"False\"")
-    variable = json.loads(variable)
-    return variable
-
-
-def take_status(variable):
-    status_request = {
-        "TerminalKey": "1677659270153DEMO",
-        "OrderId": None,
-        "Token": None
-    }
-    order_id = variable['OrderId']
-    status_request['OrderId'] = order_id
-    str_to_token = status_request['OrderId'] + '9rgoqv88ygs8g7ed' + status_request['TerminalKey']
-    request_hash = sha256(str_to_token.encode()).hexdigest()
-    status_request['Token'] = request_hash
-    status_answer = requests.post('https://securepay.tinkoff.ru/v2/CheckOrder', json.dumps(status_request))
-    status_answer = read_json(status_answer.text)
-    status_answer = status_answer["Payments"][0]['Status']
-    return status_answer
-
-
 def my_job():
-    # models = Payment
-    payment_object = list(Payment.objects.all())
-    #  запрос, чтобы узнать статус оплаты https://www.tinkoff.ru/kassa/develop/api/payments/checkorder-description/
-    i = -1
-    while 1:
-        try:  # объект Payment is not iterable ¯\_(ツ)_/¯
-            i += 1
-            if payment_object[i].result_payment == 'success':  # проверяем только записи с неоплаченными заказами:
-                continue
-            variable = payment_object[i].response_payment  # хотим достать номер заказа, чтобы чекнуть оплату
-            variable = read_json(variable)
-            if variable['ErrorCode'] == '0':  # цель - достать статус оплаты
-                variable = take_status(variable)
-            else:
-                continue
-            if variable == 'CONFIRMED':  # если пользователь оплатил заказ по ссылке - меняем статус в базе и больше его не проверяем
-                success_order = Payment.objects.get(pk=payment_object[i].pk)
-                success_order.result_payment = 'success'
-                success_order.save()
-        except:
-            break
-
+    read_db()
+    read_tg()
 
 # The `close_old_connections` decorator ensures that database connections, that have become
 # unusable or are obsolete, are closed before and after your job has run. You should use it
