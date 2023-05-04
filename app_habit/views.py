@@ -20,15 +20,11 @@ class HabitListView(generics.ListAPIView):  # for testing
 
 class MyHabitListView(generics.ListAPIView):  # for testing
     serializer_class = HabitViewSerializer
-    # queryset = Habit.objects.all()
-    # permission_classes = [Owner]
 
     def get_queryset(self):
         queryset = Habit.objects.all()
         queryset = queryset.filter(author=self.request.user)
         return queryset
-
-
 
 
 class HabitDeleteView(generics.DestroyAPIView):
