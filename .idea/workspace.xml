@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2c07feae-c20f-419b-9933-109f9e950f2d" name="Changes" comment="Настроил интеграцию с тг. Отсались документация и тесты." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Os5IpnzJlkE6MH4twwYHXtC4hp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/code/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\grow-lot-habits" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Python tests for tests.HabitTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="grow-lot-habits" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app_habit" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.HabitTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for tests.HabitTestCase" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c07feae-c20f-419b-9933-109f9e950f2d" name="Changes" comment="" />
+      <created>1682336371538</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682336371538</updated>
+      <workItem from="1682336374163" duration="2758000" />
+      <workItem from="1682369157687" duration="12562000" />
+      <workItem from="1682625714606" duration="2053000" />
+      <workItem from="1682726503446" duration="5419000" />
+      <workItem from="1682847679895" duration="4165000" />
+      <workItem from="1682948874089" duration="4300000" />
+      <workItem from="1682953287797" duration="24000" />
+      <workItem from="1682953316770" duration="1230000" />
+      <workItem from="1682966495942" duration="2506000" />
+      <workItem from="1683015759424" duration="7144000" />
+      <workItem from="1683057059923" duration="26035000" />
+      <workItem from="1683172613830" duration="859000" />
+      <workItem from="1683173632887" duration="3538000" />
+    </task>
+    <task id="LOCAL-00001" summary="Вот теперь валидаторс are ok">
+      <created>1682731382787</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682731382787</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Добил эндпоинты. Отсалось сделать документацию и сделать интеграцию с телегой.">
+      <created>1682954535779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682954535779</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Поменял бд (sqlite выдавал ошибку при обращении не через джангу). Сделал запись telegram id в бд с custom user - теперь смогу рассылать напоминалки через tg.">
+      <created>1683108999548</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683108999548</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Настроил интеграцию с тг. Отсались документация и тесты.">
+      <created>1683125117735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683125117735</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Вот теперь валидаторс are ok" />
+    <MESSAGE value="Добил эндпоинты. Отсалось сделать документацию и сделать интеграцию с телегой." />
+    <MESSAGE value="Поменял бд (sqlite выдавал ошибку при обращении не через джангу). Сделал запись telegram id в бд с custom user - теперь смогу рассылать напоминалки через tg." />
+    <MESSAGE value="Настроил интеграцию с тг. Отсались документация и тесты." />
+    <option name="LAST_COMMIT_MESSAGE" value="Настроил интеграцию с тг. Отсались документация и тесты." />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/grow_lot_habits$.coverage" NAME=" Coverage Results" MODIFIED="1683174062570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_habit" />
+    <SUITE FILE_PATH="coverage/grow_lot_habits$remember.coverage" NAME="remember Coverage Results" MODIFIED="1683124898214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_habit" />
+    <SUITE FILE_PATH="coverage/grow_lot_habits$runapscheduler.coverage" NAME="runapscheduler Coverage Results" MODIFIED="1683015876928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app_habit/management/commands" />
+  </component>
+</project>
